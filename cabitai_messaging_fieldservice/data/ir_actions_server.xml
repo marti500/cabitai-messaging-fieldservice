@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 CabitAI
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <!-- Run when the customer taps a button of the reminder template. -->
+    <record id="action_customer_confirm" model="ir.actions.server">
+        <field name="name">WhatsApp: the customer confirms the appointment</field>
+        <field name="model_id" ref="fieldservice.model_fsm_order" />
+        <field name="state">code</field>
+        <field name="code">records._cabitai_customer_confirm()</field>
+    </record>
+    <record id="action_customer_change" model="ir.actions.server">
+        <field
+            name="name"
+        >WhatsApp: the customer wants to change the appointment</field>
+        <field name="model_id" ref="fieldservice.model_fsm_order" />
+        <field name="state">code</field>
+        <field name="code">records._cabitai_customer_change()</field>
+    </record>
+    <record id="action_customer_cancel" model="ir.actions.server">
+        <field name="name">WhatsApp: the customer cancels the appointment</field>
+        <field name="model_id" ref="fieldservice.model_fsm_order" />
+        <field name="state">code</field>
+        <field name="code">records._cabitai_customer_cancel()</field>
+    </record>
+</odoo>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 CabitAI
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="fsm_order_form" model="ir.ui.view">
+        <field name="model">fsm.order</field>
+        <field name="inherit_id" ref="fieldservice.fsm_order_form" />
+        <field name="arch" type="xml">
+            <header position="inside">
+                <button
+                    name="%(cabitai_messaging.send_wizard_action)d"
+                    type="action"
+                    string="Send WhatsApp"
+                    groups="cabitai_messaging.group_messaging_user"
+                />
+            </header>
+            <field name="scheduled_date_start" position="after">
+                <field
+                    name="cabitai_customer_state"
+                    widget="badge"
+                    invisible="not cabitai_customer_state"
+                    decoration-info="cabitai_customer_state == 'pending'"
+                    decoration-success="cabitai_customer_state == 'confirmed'"
+                    decoration-warning="cabitai_customer_state == 'change'"
+                    decoration-danger="cabitai_customer_state == 'cancel'"
+                />
+                <field
+                    name="cabitai_reminder_sent_at"
+                    invisible="not cabitai_reminder_sent_at"
+                />
+            </field>
+        </field>
+    </record>
+
+    <record id="fsm_order_list_view" model="ir.ui.view">
+        <field name="model">fsm.order</field>
+        <field name="inherit_id" ref="fieldservice.fsm_order_list_view" />
+        <field name="arch" type="xml">
+            <field name="scheduled_date_start" position="after">
+                <field
+                    name="cabitai_customer_state"
+                    widget="badge"
+                    optional="show"
+                    decoration-info="cabitai_customer_state == 'pending'"
+                    decoration-success="cabitai_customer_state == 'confirmed'"
+                    decoration-warning="cabitai_customer_state == 'change'"
+                    decoration-danger="cabitai_customer_state == 'cancel'"
+                />
+            </field>
+        </field>
+    </record>
+</odoo>

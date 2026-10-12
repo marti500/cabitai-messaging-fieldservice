@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 CabitAI
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="fieldservice.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <block name="order_setting_container" position="after">
+                <block title="WhatsApp" name="cabitai_fsm_whatsapp">
+                    <setting
+                        id="cabitai_fsm_account"
+                        help="Account used for the appointment messages and the language of their templates."
+                    >
+                        <field name="cabitai_fsm_account_id" />
+                        <div class="content-group mt-2">
+                            <field name="cabitai_fsm_lang" />
+                        </div>
+                    </setting>
+                    <setting
+                        id="cabitai_fsm_reminder"
+                        help="Sends a reminder with Confirm, Change and Cancel buttons before each visit."
+                    >
+                        <field name="cabitai_fsm_reminder" />
+                        <div
+                            class="content-group mt-2"
+                            invisible="not cabitai_fsm_reminder"
+                        >
+                            <field
+                            name="cabitai_fsm_reminder_hours"
+                            class="oe_inline"
+                        />
+                            hours before the scheduled start
+                            <div class="mt-1">
+                                Template: <field
+                            name="cabitai_fsm_reminder_status"
+                            class="oe_inline"
+                            invisible="not cabitai_fsm_reminder_status"
+                        /><span
+                            class="text-muted"
+                            invisible="cabitai_fsm_reminder_status"
+                        >not submitted yet: save, then press Submit templates to Meta.</span>
+                            </div>
+                        </div>
+                    </setting>
+                    <setting
+                        id="cabitai_fsm_completion"
+                        help="Sends a thank-you message when an order is completed."
+                    >
+                        <field name="cabitai_fsm_completion" />
+                        <div
+                            class="content-group mt-2"
+                            invisible="not cabitai_fsm_completion"
+                        >
+                            Template: <field
+                            name="cabitai_fsm_completion_status"
+                            class="oe_inline"
+                            invisible="not cabitai_fsm_completion_status"
+                        /><span
+                            class="text-muted"
+                            invisible="cabitai_fsm_completion_status"
+                        >not submitted yet: save, then press Submit templates to Meta.</span>
+                        </div>
+                    </setting>
+                    <setting
+                        id="cabitai_fsm_buttons"
+                        string="When the customer answers"
+                        help="Confirm marks the order as confirmed; Change creates an activity to agree a new time."
+                    >
+                        <div class="content-group">
+                            <div class="row mt-2">
+                                <label
+                                    for="cabitai_fsm_confirm_stage_id"
+                                    class="col-lg-5 o_light_label"
+                                />
+                                <field name="cabitai_fsm_confirm_stage_id" />
+                            </div>
+                            <div class="row">
+                                <label
+                                    for="cabitai_fsm_cancel_mode"
+                                    class="col-lg-5 o_light_label"
+                                />
+                                <field name="cabitai_fsm_cancel_mode" />
+                            </div>
+                            <div class="row">
+                                <label
+                                    for="cabitai_fsm_activity_user_id"
+                                    class="col-lg-5 o_light_label"
+                                />
+                                <field name="cabitai_fsm_activity_user_id" />
+                            </div>
+                        </div>
+                    </setting>
+                    <setting
+                        id="cabitai_fsm_templates"
+                        help="Writes the templates and submits them to Meta for approval. Nothing is sent until Meta approves them."
+                        invisible="not cabitai_fsm_account_id or not (cabitai_fsm_reminder or cabitai_fsm_completion)"
+                    >
+                        <button
+                            name="action_cabitai_fsm_setup_templates"
+                            type="object"
+                            string="Submit templates to Meta"
+                            class="btn-primary"
+                        />
+                    </setting>
+                </block>
+            </block>
+        </field>
+    </record>
+</odoo>

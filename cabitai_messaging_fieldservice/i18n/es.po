@@ -1,0 +1,300 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* cabitai_messaging_fieldservice
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-12 16:39+0000\n"
+"PO-Revision-Date: 2026-10-12 16:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. module: cabitai_messaging_fieldservice
+#: model_terms:ir.ui.view,arch_db:cabitai_messaging_fieldservice.res_config_settings_view_form
+msgid "<span class=\"text-muted\" invisible=\"cabitai_fsm_completion_status\">not submitted yet: save, then press Submit templates to Meta.</span>"
+msgstr "<span class=\"text-muted\" invisible=\"cabitai_fsm_completion_status\">sin enviar todavía: guarda y pulsa «Enviar plantillas a Meta».</span>"
+
+#. module: cabitai_messaging_fieldservice
+#: model_terms:ir.ui.view,arch_db:cabitai_messaging_fieldservice.res_config_settings_view_form
+msgid "<span class=\"text-muted\" invisible=\"cabitai_fsm_reminder_status\">not submitted yet: save, then press Submit templates to Meta.</span>"
+msgstr "<span class=\"text-muted\" invisible=\"cabitai_fsm_reminder_status\">sin enviar todavía: guarda y pulsa «Enviar plantillas a Meta».</span>"
+
+#. module: cabitai_messaging_fieldservice
+#: model_terms:ir.ui.view,arch_db:cabitai_messaging_fieldservice.res_config_settings_view_form
+msgid "Account used for the appointment messages and the language of their templates."
+msgstr "Cuenta para los mensajes de las citas e idioma de sus plantillas."
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_company__cabitai_fsm_activity_user_id
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_config_settings__cabitai_fsm_activity_user_id
+msgid "Activities For"
+msgstr "Actividades para"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model,name:cabitai_messaging_fieldservice.model_cabitai_messaging_template
+msgid "Business Messaging Template"
+msgstr "Plantilla de mensajería empresarial"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields.selection,name:cabitai_messaging_fieldservice.selection__res_company__cabitai_fsm_cancel_mode__cancel
+msgid "Cancel the order"
+msgstr "Cancelar la orden"
+
+#. module: cabitai_messaging_fieldservice
+#. odoo-python
+#: code:addons/cabitai_messaging_fieldservice/models/res_company.py:0
+msgid "Choose the WhatsApp account first."
+msgstr "Elige primero la cuenta de WhatsApp."
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model,name:cabitai_messaging_fieldservice.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_company__cabitai_fsm_completion_template_id
+msgid "Completion Template"
+msgstr "Plantilla de servicio completado"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_config_settings__cabitai_fsm_completion_status
+msgid "Completion Template Status"
+msgstr "Estado de la plantilla de servicio completado"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model,name:cabitai_messaging_fieldservice.model_res_config_settings
+msgid "Config Settings"
+msgstr "Ajustes de configuración"
+
+#. module: cabitai_messaging_fieldservice
+#: model_terms:ir.ui.view,arch_db:cabitai_messaging_fieldservice.res_config_settings_view_form
+msgid "Confirm marks the order as confirmed; Change creates an activity to agree a new time."
+msgstr "Confirmar marca la orden como confirmada; Cambiar crea una actividad para acordar otra hora."
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields.selection,name:cabitai_messaging_fieldservice.selection__fsm_order__cabitai_customer_state__confirmed
+msgid "Confirmed by the customer"
+msgstr "Confirmada por el cliente"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields.selection,name:cabitai_messaging_fieldservice.selection__res_company__cabitai_fsm_cancel_mode__activity
+msgid "Create an activity"
+msgstr "Crear una actividad"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_fsm_order__cabitai_customer_state
+msgid "Customer Confirmation"
+msgstr "Confirmación del cliente"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_fsm_order__cabitai_customer_name
+msgid "Customer Name for Messages"
+msgstr "Nombre del cliente en los mensajes"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields.selection,name:cabitai_messaging_fieldservice.selection__fsm_order__cabitai_customer_state__cancel
+msgid "Customer wants to cancel"
+msgstr "El cliente quiere cancelar"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields.selection,name:cabitai_messaging_fieldservice.selection__fsm_order__cabitai_customer_state__change
+msgid "Customer wants to change"
+msgstr "El cliente quiere cambiar"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_cabitai_messaging_template__display_name
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_company__display_name
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields.selection,name:cabitai_messaging_fieldservice.selection__res_company__cabitai_fsm_lang__en
+msgid "English"
+msgstr "Inglés"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model,name:cabitai_messaging_fieldservice.model_fsm_order
+msgid "Field Service Order"
+msgstr "Orden de servicio de campo"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.actions.server,name:cabitai_messaging_fieldservice.ir_cron_send_reminders_ir_actions_server
+msgid "Field Service: WhatsApp appointment reminders"
+msgstr "Servicio de campo: recordatorios de cita por WhatsApp"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_cabitai_messaging_template__id
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_fsm_order__id
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_company__id
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_config_settings__id
+msgid "ID"
+msgstr "ID"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_fsm_order__display_name
+msgid "Order"
+msgstr "Orden"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_company__cabitai_fsm_reminder_hours
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_config_settings__cabitai_fsm_reminder_hours
+msgid "Reminder Hours Before"
+msgstr "Horas de antelación del recordatorio"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_company__cabitai_fsm_reminder_template_id
+msgid "Reminder Template"
+msgstr "Plantilla de recordatorio"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_config_settings__cabitai_fsm_reminder_status
+msgid "Reminder Template Status"
+msgstr "Estado de la plantilla de recordatorio"
+
+#. module: cabitai_messaging_fieldservice
+#: model_terms:ir.ui.view,arch_db:cabitai_messaging_fieldservice.fsm_order_form
+msgid "Send WhatsApp"
+msgstr "Enviar WhatsApp"
+
+#. module: cabitai_messaging_fieldservice
+#: model_terms:ir.ui.view,arch_db:cabitai_messaging_fieldservice.res_config_settings_view_form
+msgid "Sends a reminder with Confirm, Change and Cancel buttons before each visit."
+msgstr "Envía un recordatorio con los botones Confirmar, Cambiar y Cancelar antes de cada visita."
+
+#. module: cabitai_messaging_fieldservice
+#: model_terms:ir.ui.view,arch_db:cabitai_messaging_fieldservice.res_config_settings_view_form
+msgid "Sends a thank-you message when an order is completed."
+msgstr "Envía un mensaje de agradecimiento al completar una orden."
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields.selection,name:cabitai_messaging_fieldservice.selection__res_company__cabitai_fsm_lang__es
+msgid "Spanish"
+msgstr "Español"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_company__cabitai_fsm_confirm_stage_id
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_config_settings__cabitai_fsm_confirm_stage_id
+msgid "Stage When Confirmed"
+msgstr "Etapa al confirmar"
+
+#. module: cabitai_messaging_fieldservice
+#: model_terms:ir.ui.view,arch_db:cabitai_messaging_fieldservice.res_config_settings_view_form
+msgid "Submit templates to Meta"
+msgstr "Enviar plantillas a Meta"
+
+#. module: cabitai_messaging_fieldservice
+#: model_terms:ir.ui.view,arch_db:cabitai_messaging_fieldservice.res_config_settings_view_form
+msgid "Template:"
+msgstr "Plantilla:"
+
+#. module: cabitai_messaging_fieldservice
+#. odoo-python
+#: code:addons/cabitai_messaging_fieldservice/models/res_config_settings.py:0
+msgid "Templates submitted to Meta. Nothing is sent until Meta approves them; the status updates by itself."
+msgstr "Plantillas enviadas a Meta. No se envía nada hasta que Meta las apruebe; el estado se actualiza solo."
+
+#. module: cabitai_messaging_fieldservice
+#. odoo-python
+#: code:addons/cabitai_messaging_fieldservice/models/fsm_order.py:0
+msgid "The customer asked on WhatsApp to cancel this appointment."
+msgstr "El cliente ha pedido por WhatsApp cancelar esta cita."
+
+#. module: cabitai_messaging_fieldservice
+#. odoo-python
+#: code:addons/cabitai_messaging_fieldservice/models/fsm_order.py:0
+msgid "The customer asked on WhatsApp to change this appointment."
+msgstr "El cliente ha pedido por WhatsApp cambiar esta cita."
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields,help:cabitai_messaging_fieldservice.field_fsm_order__cabitai_customer_name
+msgid "The location's primary contact, or the location itself."
+msgstr "El contacto principal de la ubicación, o la propia ubicación."
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields.selection,name:cabitai_messaging_fieldservice.selection__fsm_order__cabitai_customer_state__pending
+msgid "Waiting for confirmation"
+msgstr "Pendiente de confirmar"
+
+#. module: cabitai_messaging_fieldservice
+#: model_terms:ir.ui.view,arch_db:cabitai_messaging_fieldservice.res_config_settings_view_form
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_company__cabitai_fsm_account_id
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_config_settings__cabitai_fsm_account_id
+msgid "WhatsApp Account for Field Service"
+msgstr "Cuenta de WhatsApp para Servicio de campo"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_company__cabitai_fsm_reminder
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_config_settings__cabitai_fsm_reminder
+msgid "WhatsApp Appointment Reminder"
+msgstr "Recordatorio de cita por WhatsApp"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_company__cabitai_fsm_completion
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_config_settings__cabitai_fsm_completion
+msgid "WhatsApp Message on Completion"
+msgstr "Mensaje de WhatsApp al completar"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_fsm_order__cabitai_reminder_sent_at
+msgid "WhatsApp Reminder Sent"
+msgstr "Recordatorio de WhatsApp enviado"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_company__cabitai_fsm_lang
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_config_settings__cabitai_fsm_lang
+msgid "WhatsApp Template Language"
+msgstr "Idioma de las plantillas de WhatsApp"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.actions.server,name:cabitai_messaging_fieldservice.action_customer_cancel
+msgid "WhatsApp: the customer cancels the appointment"
+msgstr "WhatsApp: el cliente cancela la cita"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.actions.server,name:cabitai_messaging_fieldservice.action_customer_confirm
+msgid "WhatsApp: the customer confirms the appointment"
+msgstr "WhatsApp: el cliente confirma la cita"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.actions.server,name:cabitai_messaging_fieldservice.action_customer_change
+msgid "WhatsApp: the customer wants to change the appointment"
+msgstr "WhatsApp: el cliente quiere cambiar la cita"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_company__cabitai_fsm_cancel_mode
+#: model:ir.model.fields,field_description:cabitai_messaging_fieldservice.field_res_config_settings__cabitai_fsm_cancel_mode
+msgid "When the Customer Cancels"
+msgstr "Cuando el cliente cancela"
+
+#. module: cabitai_messaging_fieldservice
+#: model_terms:ir.ui.view,arch_db:cabitai_messaging_fieldservice.res_config_settings_view_form
+msgid "When the customer answers"
+msgstr "Cuando el cliente responde"
+
+#. module: cabitai_messaging_fieldservice
+#: model:ir.model.fields,help:cabitai_messaging_fieldservice.field_res_company__cabitai_fsm_activity_user_id
+#: model:ir.model.fields,help:cabitai_messaging_fieldservice.field_res_config_settings__cabitai_fsm_activity_user_id
+msgid "Who gets the activities when a customer asks to change or cancel. Empty: whoever created the order."
+msgstr "Quién recibe las actividades cuando un cliente pide cambiar o cancelar. Vacío: quien creó la orden."
+
+#. module: cabitai_messaging_fieldservice
+#: model_terms:ir.ui.view,arch_db:cabitai_messaging_fieldservice.res_config_settings_view_form
+msgid "Writes the templates and submits them to Meta for approval. Nothing is sent until Meta approves them."
+msgstr "Escribe las plantillas y las envía a Meta para su aprobación. No se envía nada hasta que Meta las apruebe."
+
+#. module: cabitai_messaging_fieldservice
+#: model_terms:ir.ui.view,arch_db:cabitai_messaging_fieldservice.res_config_settings_view_form
+msgid "hours before the scheduled start"
+msgstr "horas antes del inicio programado"
